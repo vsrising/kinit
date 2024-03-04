@@ -83,7 +83,7 @@ def run(
 
 
 @shell_app.command()
-def init(env: Environment = Environment.pro):
+def init(env: Environment = Environment.dev):
     """
     初始化数据
 
@@ -101,7 +101,7 @@ def init(env: Environment = Environment.pro):
 
 
 @shell_app.command()
-def migrate(env: Environment = Environment.pro):
+def migrate(env: Environment = Environment.dev):
     """
     将模型迁移到数据库，更新数据库表结构
 

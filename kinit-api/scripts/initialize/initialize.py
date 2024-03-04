@@ -44,7 +44,7 @@ class InitializeData:
         self.__get_sheet_data()
 
     @classmethod
-    def migrate_model(cls, env: Environment = Environment.pro):
+    def migrate_model(cls, env: Environment = Environment.dev):
         """
         模型迁移映射到数据库
         """
@@ -160,7 +160,7 @@ class InitializeData:
         """
         await self.__generate_data("vadmin_help_issue", help_models.VadminIssue)
 
-    async def run(self, env: Environment = Environment.pro):
+    async def run(self, env: Environment = Environment.dev):
         """
         执行初始化工作
         """
